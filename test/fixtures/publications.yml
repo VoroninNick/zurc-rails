@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  title: MyString
+  avatar: 
+  display_avatar_on_content_page: false
+  short_description: MyText
+  intro: MyText
+  content: MyText
+  author: MyString
+  release_date: 2013-12-03 15:18:55
+  publish: false
+  doc_file: 
+  pdf_file: 
+
+two:
+  name: MyString
+  title: MyString
+  avatar: 
+  display_avatar_on_content_page: false
+  short_description: MyText
+  intro: MyText
+  content: MyText
+  author: MyString
+  release_date: 2013-12-03 15:18:55
+  publish: false
+  doc_file: 
+  pdf_file: 
