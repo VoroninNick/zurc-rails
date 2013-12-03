@@ -49,3 +49,5 @@ gem 'paperclip'
 gem 'ckeditor'
 gem 'rails_admin'
 gem 'globalize3'
+
+gem "devise"
