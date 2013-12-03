@@ -7,6 +7,7 @@ class CreatePages < ActiveRecord::Migration
       t.text :breadcrumbs
       t.string :route
       t.text :metadata
+      t.text :content
 
       t.timestamps
     end
