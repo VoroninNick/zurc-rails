@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore RubyMine metadata
+/.idea
+
+# Ignore public data: compiled assets, ckeditor assets etc.
+/public
