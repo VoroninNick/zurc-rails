@@ -51,3 +51,5 @@ gem 'rails_admin'
 gem 'globalize3'
 
 gem "devise"
+
+gem 'foundation-rails'
