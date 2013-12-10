@@ -1,0 +1,27 @@
+<div id="header">
+  <div id="header-inner">
+    <div class="row">
+
+      <div id="logo" class="large-2">
+        <% if current_page?(:root) %>
+            <%= image_tag('ZURC-logo.png') %>
+        <% else %>
+            <%= link_to( image_tag('ZURC-logo.png', alt: 'ZURC'), '/' ) %>
+        <% end %>
+      </div>
+
+      <div id="site-caption" class="columns large-3">
+        <h1 class="level-1">ЗАХІДНОУКРАЇНСЬКИЙ РЕСУРСНИЙ ЦЕНТР</h1>
+        <h2 class="level-2">Інновації через розвиток</h2>
+      </div>
+
+      <div id="header-contact" class="large-3 right">
+
+      </div>
+
+      <div id="language-bar" class="large-2 right">
+
+      </div>
+    </div>
+  </div>
+</div>
