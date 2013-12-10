@@ -1,4 +1,10 @@
 Zurc::Application.routes.draw do
+  get "/contact", to: 'page#contact', as: :contact
+
+  # get "*custom_page", to: 'page#custom_page', as: :custom_page
+
+  root to: 'page#index'
+
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :users
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
