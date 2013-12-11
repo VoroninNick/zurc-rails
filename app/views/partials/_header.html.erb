@@ -1,27 +1,35 @@
 <div id="header">
-  <div id="header-inner">
-    <div class="row">
+  <div class="row">
+    <div id="logo" class="large-2 left medium-2 small-4 columns">
+      <h1><% if current_page?(:root) %><%= image_tag('logos/ZURC-logo.png') %><% else %><%= link_to(image_tag('logos/ZURC-logo.png'), root_path) %><% end %></h1>
+    </div>
 
-      <div id="logo" class="large-2">
-        <% if current_page?(:root) %>
-            <%= image_tag('ZURC-logo.png') %>
-        <% else %>
-            <%= link_to( image_tag('ZURC-logo.png', alt: 'ZURC'), '/' ) %>
-        <% end %>
-      </div>
+    <div class="large-5 medium-5 hide-for-small columns" id="site-caption">
+      <h1>ЗАХІДНОУКРАЇНСЬКИЙ<br/>РЕСУРСНИЙ ЦЕНТР</h1>
+      <h2>Інновації через розвиток</h2>
+    </div>
 
-      <div id="site-caption" class="columns large-3">
-        <h1 class="level-1">ЗАХІДНОУКРАЇНСЬКИЙ РЕСУРСНИЙ ЦЕНТР</h1>
-        <h2 class="level-2">Інновації через розвиток</h2>
-      </div>
+    <div id="header-contacts" class="large-3 small-4 columns">
+      <ul>
+        <li class="phone"><span class="image-container"><%= image_tag('orange_phone.png', alt: 'phone:') %></span>+38 <color>(</color>032<color>)</color> 297<color>-</color>66<color>-</color>24</li>
+        <li class="mail"><%= link_to( image_tag('orange_mail.png', alt: 'email:'), 'mailto:office@zurc.org', class: 'image-container' ) %><%= link_to('office@zurc.org', 'mailto:office@zurc.org') %></li>
+      </ul>
+    </div>
 
-      <div id="header-contact" class="large-3 right">
-
-      </div>
-
-      <div id="language-bar" class="large-2 right">
-
-      </div>
+    <div id="language-bar" class="large-2 hide-for-small columns">
+      <ul class="right">
+        <li class="language" id="ua"><span class="image-wrapper"><%=  image_tag('flags/ukraine.png') %></span><span class="language-label">UA</span></li>
+        <li class="language" id="uk"><%= link_to( image_tag('flags/united_kingdom.png'), '#', class: 'image-wrapper' ) %><%= link_to('ENG', '#', class: 'language-label') %></li>
+      </ul>
+    </div>
+    <div id="mobile-button" class="small-4 columns right show-for-small">
+      <button class="right"></button>
     </div>
   </div>
 </div>
+
+    
+  
+<!-- End Header and Nav -->
+
+  

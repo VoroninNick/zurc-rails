@@ -11,20 +11,24 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
-    <div id="wrap">
-
-      <%= render partial: 'partials/header'  %>
-
-      <div id="content">
-        <%= yield %>
-      </div>
-
+  <body class="language-ua">
+  <div id="wrap">
+    <%= render partial: 'partials/header' %>
+    <%= render partial: 'partials/menu' %>
+    <div id="main">
+      <%= render partial: 'partials/breadcrumbs' %>
+      <%= yield %>
     </div>
+  </div>
 
-    <div id="footer">
+  <div id="full-footer">
+    <%= render partial: 'partials/sponsors' %>
 
-    </div>
-    <%= javascript_include_tag "application" %>
+    <%= render partial: 'partials/data_footer' %>
+
+    <%= render partial: 'partials/footer' %>
+  </div>
+
+  <%= javascript_include_tag "application" %>
   </body>
 </html>

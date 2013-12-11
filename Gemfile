@@ -58,3 +58,9 @@ gem "devise"
 gem 'foundation-rails'
 
 gem 'rails_12factor', group: :production # resolve assets 404 error on heroku hosting
+
+
+# next following visual js gems
+gem 'caroufredsel-rails', :git => 'git://github.com/johnbintz/caroufredsel-rails.git'
+
+gem 'fancybox-rails', :github => 'vikewoods/fancybox-rails'

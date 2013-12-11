@@ -14,6 +14,18 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
-//= require_tree .
+//= require jquery
+//= require jquery_ujs
+//= require foundation
+//= require turbolinks
+//= require jquery.flexisel
+//= require caroufredsel
+//= require greyScale
+//= require jquery.black_and_white.min
+//= require refineslide/jquery.refineslide
+//= require owl_carousel/owl.carousel.min
+//= require fancybox
+//= require layout
+//= require page
 
 $(function(){ $(document).foundation(); });

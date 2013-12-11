@@ -1,3 +1,17 @@
+GIT
+  remote: git://github.com/johnbintz/caroufredsel-rails.git
+  revision: 81bb0c362e26ac76c714d49a2e02e076a433a039
+  specs:
+    caroufredsel-rails (6.1.0)
+      coffee-script
+
+GIT
+  remote: git://github.com/vikewoods/fancybox-rails.git
+  revision: 0060b8f8db0bfb46c6c83ab85cba8f9d43bf9d0c
+  specs:
+    fancybox-rails (0.1.5)
+      railties (>= 3.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -185,9 +199,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  caroufredsel-rails!
   ckeditor
   coffee-rails (~> 4.0.0)
   devise
+  fancybox-rails!
   foundation-rails
   globalize3
   jbuilder (~> 1.2)
