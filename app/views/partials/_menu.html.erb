@@ -1,9 +1,41 @@
+<% root_items = get_root_menu_items %>
 <div id="menu-wrapper">
   <div class="row">
 <div id="menu" class="">
       <section class="top-bar-section">
         <ul class="">
-          <li><a href="#"><span>Новини</span></a></li>
+          <% root_items.each do |root_item| %>
+            <li class="root <% if root_item.child_items.count > 0 then %><%= 'has-dropdown' %><% end %>">
+              <%= link_to( content_tag( :span, root_item.title), root_item.link) %>
+              <% if root_item.child_items.count > 0 %>
+                  <div class="dropdown">
+                    <div class="dropdown-inner">
+                      <ul>
+                        <% ul_1_begin = 0 %>
+                        <% ul_1_end = ((root_item.child_items.count / 2).ceil) %>
+                        <% ul_2_begin = ul_1_end + 1 %>
+                        <% ul_2_end = root_item.child_items.count - 1 %>
+
+                        <% for i in ul_1_begin..ul_1_end %>
+                            <% child_item = root_item.child_items[i] %>
+                            <li><%= link_to( content_tag( :span, child_item.title), child_item.link) %></li>
+                        <% end %>
+                      </ul>
+
+                      <ul>
+                        <% for i in ul_2_begin..ul_2_end %>
+                            <% child_item = root_item.child_items[i] %>
+                            <li><%= link_to( content_tag( :span, child_item.title), child_item.link) %></li>
+                        <% end %>
+                      </ul>
+
+                      <div class="divider"><div></div></div>
+                    </div>
+                  </div>
+              <% end %>
+            </li>
+          <% end %>
+          <!--<li><a href="#"><span>Новини</span></a></li>
           
           <li id="about-us" class="has-dropdown "><a href="#" ><span>Про нас</span></a>
             <div class="dropdown">
@@ -46,7 +78,7 @@
             </div>
           </li>
           <li><a href="#" ><span>Публікації</span></a></li>
-          <li><a href="#" ><span>Контакти</span></a></li>
+          <li><a href="#" ><span>Контакти</span></a></li>-->
         </ul>
         </section>
     </div>

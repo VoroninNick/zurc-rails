@@ -1,5 +1,6 @@
 class PageController < ApplicationController
   def index
+    @home_gallery_images = HomeGalleryImage.all
     render layout: 'home'
   end
 

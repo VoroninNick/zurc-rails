@@ -1,0 +1,16 @@
+<div id="home-images">
+  <div class="row flex-slider">
+    <div class="large-12 columns">
+
+      <div class="image_carousel">
+        <ul id="foo1">
+
+          <% @home_gallery_images.each do |img| %>
+              <li><%= link_to( image_tag( img.image.url(:home_thumb) ), img.image.url ) %></li>
+          <% end %>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>

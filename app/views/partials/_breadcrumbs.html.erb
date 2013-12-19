@@ -1,7 +1,10 @@
 <div id="breadcrumbs-wrapper">
 	<div class="row">
 		<ul class="breadcrumbs">
-			<% @breadcrumbs.each_with_index do |b, index| %>
+            <% if !@breadcrumbs %>
+                <% @breadcrumbs = get_default_breadcrumbs %>
+            <% end %>
+		    <% @breadcrumbs.each_with_index do |b, index| %>
   				<li><% if index + 1 < @breadcrumbs.count %>
   						<%= link_to(b[:title], b[:url]) %>
   					<% else %>
