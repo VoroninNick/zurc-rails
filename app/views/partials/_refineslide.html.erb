@@ -5,18 +5,14 @@
       </div>
                                 <ul id="refineslide-images" class="rs-slider">
                                  <li class="group">
-                                 <a href="#">
-                                 <img src="/assets/banners/1.jpg" alt="" />
-                                 </a>
+                                   <%= link_to( image_tag( 'banners/1.jpg', alt: '' ), '#' ) %>
                                  <div class="rs-caption rs-bottom">
                                  <h3>Caption Area</h3>
                                  <p>Wood texture by <a href="http://downloads.dvq.co.nz/" class="button">Matthew Skiles.</a></p>
                                  </div>
                                  </li>
                                  <li class="group">
-                                 <a href="#" class="slide-parent">
-                                 <img src="/assets/banners/2.jpg" alt=""/>
-                                 </a>
+                                   <%= link_to( image_tag( 'banners/2.jpg', alt: '' ), '#', class: 'slide-parent' ) %>
                                  <div class="rs-caption rs-top-right">
                                  <p>This image is wrapped in a link.</p>
                                  </div>
