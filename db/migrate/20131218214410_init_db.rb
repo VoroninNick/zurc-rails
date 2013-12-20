@@ -1,3 +1,5 @@
+# -*- encoding : utf-8 -*-
+
 class InitDb < ActiveRecord::Migration
   def change
     # create user
