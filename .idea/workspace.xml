@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_owl-carousel.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/owl_carousel/_owl-carousel.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="1" selection-start="1119" selection-end="1119" vertical-scroll-proportion="-10.791667" vertical-offset="596" max-vertical-offset="3615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_owl-theme.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/owl_carousel/_owl-theme.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,7 +35,16 @@
       <file leaf-file-name="main_menu_item.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/main_menu_item.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="17" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+            <state line="7" column="35" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="61" selection-start="326" selection-end="326" vertical-scroll-proportion="0.09155646" vertical-offset="0" max-vertical-offset="983">
               <folding />
             </state>
           </provider>
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131218214410_init_db.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20131218214410_init_db.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="90" selection-start="907" selection-end="907" vertical-scroll-proportion="0.20103092" vertical-offset="0" max-vertical-offset="970">
+            <state line="12" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
@@ -123,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/home_banner.rb" />
         <option value="$PROJECT_DIR$/app/models/news_entry.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
@@ -169,6 +168,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/_layout.scss.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/owl_carousel/_owl-carousel.scss" />
         <option value="$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
   </component>
@@ -804,11 +804,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/news_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/publications_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="5" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
@@ -1144,16 +1139,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/main_menu_item.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="17" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+        <state line="12" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/main_menu_item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="90" selection-start="907" selection-end="907" vertical-scroll-proportion="0.20103092" vertical-offset="0" max-vertical-offset="970">
+        <state line="7" column="35" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="61" selection-start="326" selection-end="326" vertical-scroll-proportion="0.09155646" vertical-offset="0" max-vertical-offset="983">
           <folding />
         </state>
       </provider>
