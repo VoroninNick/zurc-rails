@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_owl-theme.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/owl_carousel/_owl-theme.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="19" selection-start="2146" selection-end="2149" vertical-scroll-proportion="-36.5" vertical-offset="774" max-vertical-offset="1755">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main_menu_item.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/main_menu_item.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,19 +32,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="61" selection-start="326" selection-end="326" vertical-scroll-proportion="0.09155646" vertical-offset="0" max-vertical-offset="983">
+            <state line="6" column="61" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="owl.carousel.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/owl_carousel/owl.carousel.scss">
+      <file leaf-file-name="20131219041208_add_display_index_to_main_menu_items.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131219041208_add_display_index_to_main_menu_items.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="14" selection-start="1147" selection-end="1150" vertical-scroll-proportion="-13.625" vertical-offset="558" max-vertical-offset="3585">
+            <state line="5" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131219013844_add_main_menu_item_id_to_pages.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131219013844_add_main_menu_item_id_to_pages.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="7" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131218214410_init_db.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="20131218214410_init_db.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+            <state line="32" column="5" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.49484536" vertical-offset="0" max-vertical-offset="970">
               <folding />
             </state>
           </provider>
@@ -167,8 +167,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/_layout.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/_layout.scss.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/owl_carousel/_owl-carousel.scss" />
-        <option value="$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb" />
       </list>
     </option>
   </component>
@@ -929,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131219041208_add_display_index_to_main_menu_items.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="80" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/page.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="23" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
@@ -946,13 +939,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20131203130800_create_main_menu_items.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="33" selection-start="83" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131219013844_add_main_menu_item_id_to_pages.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
@@ -1139,13 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/main_menu_item.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="35" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
@@ -1155,7 +1134,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="61" selection-start="326" selection-end="326" vertical-scroll-proportion="0.09155646" vertical-offset="0" max-vertical-offset="983">
+        <state line="6" column="61" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131219041208_add_display_index_to_main_menu_items.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131219013844_add_main_menu_item_id_to_pages.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131218214410_init_db.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="5" selection-start="3029" selection-end="3029" vertical-scroll-proportion="0.49484536" vertical-offset="0" max-vertical-offset="970">
           <folding />
         </state>
       </provider>
