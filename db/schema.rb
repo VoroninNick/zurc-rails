@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131219013844) do
+ActiveRecord::Schema.define(version: 20131219041208) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,10 +61,13 @@ ActiveRecord::Schema.define(version: 20131219013844) do
     t.string   "title"
     t.integer  "parent_id"
     t.string   "link"
-    t.integer  "page_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "page_id"
+    t.integer  "display_index"
   end
+
+  add_index "main_menu_items", ["page_id"], name: "index_main_menu_items_on_page_id", using: :btree
 
   create_table "news_entries", force: true do |t|
     t.string   "name"
@@ -98,6 +101,8 @@ ActiveRecord::Schema.define(version: 20131219013844) do
     t.datetime "updated_at"
     t.integer  "main_menu_item_id"
   end
+
+  add_index "pages", ["main_menu_item_id"], name: "index_pages_on_main_menu_item_id", using: :btree
 
   create_table "publications", force: true do |t|
     t.string   "name"

@@ -1,4 +1,12 @@
 Zurc::Application.routes.draw do
+
+  # temp routes for static pages
+  get "/what-we-do", to: 'page#what_we_do', as: :what_we_do
+
+  get "news", to: 'news#list', as: :news_list
+  get "news/:item", to: 'news#item', as: :news_item
+  get "publications", to: 'publications#list', as: :publications_list
+  get "publications/:item", to: 'publications#item', as: :publications_item
   get "/contact", to: 'page#contact', as: :contact
 
 

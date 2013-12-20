@@ -1,5 +1,5 @@
 class MainMenuItem < ActiveRecord::Base
-  attr_accessible :name, :title, :parent_id, :link, :page_id, :parent, :child_items, :child_item_ids
+  attr_accessible :name, :title, :parent_id, :link, :page_id, :parent, :child_items, :child_item_ids, :display_index
 
   #belongs_to :parent, :class_name => "MainMenuItem"
   #has_many :main_menu, :foreign_key => "parent_id"
@@ -12,8 +12,18 @@ class MainMenuItem < ActiveRecord::Base
 
   belongs_to :parent, class_name: "MainMenuItem"
 
+  before_save :check_url
+
+  def check_url
+    if self.link.length == 0 && self.page != nil
+      self.link = self.page.route
+    end
+  end
+
   has_one :page
   #belongs_to :page
+
+  attr_accessible :page
 
   rails_admin do
     edit do
@@ -22,6 +32,7 @@ class MainMenuItem < ActiveRecord::Base
       field :parent
       field :page
       field :link
+      field :display_index
       field :child_items
     end
   end

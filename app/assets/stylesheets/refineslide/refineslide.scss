@@ -16,6 +16,7 @@
 .rs-wrap {
     position: relative;
     max-width: 100%;
+  width: 100% !important;
 
     //pasha mods
     //max-width: 1800px;
@@ -52,6 +53,7 @@
         max-width: 100%;
         max-height: 100%;
         -ms-interpolation-mode: bicubic;
+      width: 100% !important;
     }
 
 /* ===[ Thumbnails ]=== */

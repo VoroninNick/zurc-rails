@@ -1,5 +1,12 @@
 class Publication < ActiveRecord::Base
-  has_attached_file :avatar
+
+  attr_accessible :avatar
+
+  has_attached_file :avatar, styles: {
+      home_pub_thumb: '370x200#'
+  }#,
+  #url: '/system/publications/avatars/:id/:style/:filename',
+  #path: '#{RAILS_ROOT}/system/publications/avatars/:id/:style/:filename'
 
   has_attached_file :doc_file
   has_attached_file :pdf_file
@@ -8,7 +15,7 @@ class Publication < ActiveRecord::Base
 
   attr_accessible :name
   attr_accessible :title
-  attr_accessible :avatar
+
   attr_accessible :display_avatar_on_content_page
   attr_accessible :short_description
   attr_accessible :intro
@@ -18,6 +25,25 @@ class Publication < ActiveRecord::Base
   attr_accessible :publish
   attr_accessible :doc_file
   attr_accessible :pdf_file
+
+  rails_admin do
+    edit do
+      field :name
+      field :title
+      field :avatar
+      field :display_avatar_on_content_page
+      field :short_description
+      field :intro
+      field :content, :ck_editor do
+
+      end
+      field :author
+      field :release_date
+      field :publish
+      field :doc_file
+      field :pdf_file
+    end
+  end
 
 
 end

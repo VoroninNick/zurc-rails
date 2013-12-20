@@ -29,26 +29,16 @@
 </div>
 
 <div id="home-publications" class="row">
-  <div class="large-4 columns">
-    <h4><%= link_to('Небольшой термальный источник: основные моменты','#') %></h4>
-    <%= link_to( image_tag( "http://placehold.it/370x200&text=[img]", alt: 'alt'), '#', class: 'image-link' ) %>
-        <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. </p>
+  <% @home_publications.each do |pub| %>
+      <div class="large-4 columns">
+        <h4><%= link_to(pub.title,'#') %></h4>
+        <%= link_to( image_tag( pub.avatar.url( :home_pub_thumb ), alt: 'alt'), '#', class: 'image-link' ) %>
+        <p><%= pub.short_description %></p>
         <a href="#" class="read-more">Читати далі</a>
-        </div>
+      </div>
+  <% end %>
 
-        <div class="large-4 columns">
-          <h4><%= link_to('This is a content section.','#') %></h4>
-          <%= link_to( image_tag( "http://placehold.it/370x200&text=[img]", alt: 'alt'), '#', class: 'image-link' ) %>
-              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump.</p>
-              <a href="#" class="read-more">Читати далі</a>
-              </div>
 
-              <div class="large-4 columns">
-                <h4><%= link_to('This is a content section.','#') %></h4>
-                <%= link_to( image_tag( "http://placehold.it/370x200&text=[img]", alt: 'alt'), '#', class: 'image-link' ) %>
-                    <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est.</p>
-                    <a href="#" class="read-more">Читати далі</a>
-                    </div>
                     </div>
 
                     <%= render partial: 'partials/owl_carousel_db' %>

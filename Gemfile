@@ -57,6 +57,9 @@ gem "devise"
 
 gem 'foundation-rails'
 
+
+gem 'heroku'
+
 gem 'rails_12factor', group: :production # resolve assets 404 error on heroku hosting
 
 

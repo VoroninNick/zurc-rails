@@ -1,6 +1,7 @@
 class PageController < ApplicationController
   def index
     @home_gallery_images = HomeGalleryImage.all
+    @home_publications = Publication.where(:publish => true).order('release_date desc').limit(3)
     render layout: 'home'
   end
 

@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   helper_method :get_root_menu_items
 
   def get_root_menu_items
-    root_items = MainMenuItem.where( :parent_id => nil )
+    root_items = MainMenuItem.where( :parent_id => nil ).order('display_index asc')
 
     return root_items
   end
