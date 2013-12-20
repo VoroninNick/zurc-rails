@@ -11,11 +11,11 @@ class InitDb < ActiveRecord::Migration
     # ActiveRecord::Base.connection.execute( query )
 
 
-    MainMenuItem.create!( name: 'root_news', title: 'Новини', parent: nil, link: '/news' )
-    MainMenuItem.create!( name: 'root_about', title: 'Про нас', parent: nil, link: nil )
-    MainMenuItem.create!( name: 'root_what_we_do', title: 'Що ми робимо', parent: nil, link: '/what-we-do' )
-    MainMenuItem.create!( name: 'root_publications', title: 'Публікації', parent: nil, link: '/publications' )
-    MainMenuItem.create!( name: 'root_contact', title: 'Контакти', parent: nil, link: '/contact' )
+    #MainMenuItem.create!( name: 'root_news', title: 'Новини', parent: nil, link: '/news' )
+    #MainMenuItem.create!( name: 'root_about', title: 'Про нас', parent: nil, link: nil )
+    #MainMenuItem.create!( name: 'root_what_we_do', title: 'Що ми робимо', parent: nil, link: '/what-we-do' )
+    #MainMenuItem.create!( name: 'root_publications', title: 'Публікації', parent: nil, link: '/publications' )
+    #MainMenuItem.create!( name: 'root_contact', title: 'Контакти', parent: nil, link: '/contact' )
 
     #MainMenuItem.create!( name: 'about_mission', title: 'Місія', parent: MainMenuItem.find_by_name( 'root_about' ), link: nil )
     #MainMenuItem.create!( name: 'about_geography', title: 'Географія', parent: MainMenuItem.find_by_name( 'root_about' ), link: nil )
