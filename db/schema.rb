@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20131219041208) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
     t.string   "data_content_type"
@@ -29,8 +26,8 @@ ActiveRecord::Schema.define(version: 20131219041208) do
     t.datetime "updated_at"
   end
 
-  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
-  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
+  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable"
+  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type"
 
   create_table "home_banners", force: true do |t|
     t.string   "name"
@@ -67,7 +64,7 @@ ActiveRecord::Schema.define(version: 20131219041208) do
     t.integer  "display_index"
   end
 
-  add_index "main_menu_items", ["page_id"], name: "index_main_menu_items_on_page_id", using: :btree
+  add_index "main_menu_items", ["page_id"], name: "index_main_menu_items_on_page_id"
 
   create_table "news_entries", force: true do |t|
     t.string   "name"
@@ -102,7 +99,7 @@ ActiveRecord::Schema.define(version: 20131219041208) do
     t.integer  "main_menu_item_id"
   end
 
-  add_index "pages", ["main_menu_item_id"], name: "index_pages_on_main_menu_item_id", using: :btree
+  add_index "pages", ["main_menu_item_id"], name: "index_pages_on_main_menu_item_id"
 
   create_table "publications", force: true do |t|
     t.string   "name"
@@ -145,7 +142,7 @@ ActiveRecord::Schema.define(version: 20131219041208) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
