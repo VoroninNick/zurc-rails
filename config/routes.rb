@@ -1,5 +1,9 @@
 Zurc::Application.routes.draw do
 
+  get "about/index"
+  get "about/page1"
+  get "about/page2"
+  get "about/page3"
   # temp routes for static pages
   get "/what-we-do", to: 'page#what_we_do', as: :what_we_do
 
